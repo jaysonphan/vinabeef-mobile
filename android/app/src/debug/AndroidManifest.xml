@@ -1,0 +1,6 @@
+<!-- Debug only: allow cleartext HTTP to the local compose stack (localhost via adb reverse,
+     10.0.2.2 = host from the emulator). Release/demo-tls must use HTTPS with a trusted CA. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:networkSecurityConfig="@xml/network_security_config"/>
+</manifest>
